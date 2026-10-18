@@ -1,0 +1,13 @@
+.env
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+runtime/
+*.sqlite
+*.db
+*.joblib
+*.pt
+*.onnx
+*.log
+.DS_Store

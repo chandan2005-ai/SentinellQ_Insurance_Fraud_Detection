@@ -1,0 +1,24 @@
+SENTINELIQ — FIXED WEBSITE, OCTOBER 2026
+
+THIS FIX: Health/Travel/Motor fraud indicator no longer automatically says
+"No deployed category-specific fraud model" once the administrator runs
+synthetic model setup. The same setup supports all 14 insurance categories.
+
+Windows (Python 3.12):
+1. Extract the ZIP. If upgrading: back up your original runtime folder
+   and copy it into the new project folder; do not delete your claim data.
+2. Double-click SETUP_WINDOWS.bat and follow its prompts.
+   It trains and deploys the three sample-category demo models.
+3. Double-click RUN_WINDOWS.bat.
+4. Visit http://127.0.0.1:8000 and log in.
+5. Case manager > open an existing case > Re-run analysis.
+6. Admin & audit > Prepare all 14 categories (optional).
+
+The 3 fictional sample PDFs are in sample_data/claim_papers.
+
+IMPORTANT: Numerical results are synthetic, uncalibrated demonstration
+indices, not fraud probabilities. Underwriting risk remains "Not trained"
+because the project has no independent underwriting model.
+
+Your data is stored in runtime/insurance.db. Never delete that folder on
+upgrade. Read README.md for troubleshooting and limitations.

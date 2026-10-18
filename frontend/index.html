@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SentinelIQ | Insurance Evidence Intelligence</title>
+<link rel="stylesheet" href="/assets/css/main.css"><script defer src="https://cdn.jsdelivr.net/npm/chart.js@4.4.8/dist/chart.umd.min.js"></script>
+<script defer src="/assets/js/app.js"></script></head>
+<body>
+<div id="login" class="auth-screen"><section class="auth-card">
+<div class="logo-xl">◈</div><h1>SentinelIQ</h1><p>Insurance evidence & risk decision support</p>
+<form id="login-form"><label>Email address<input required type="email" id="email" autocomplete="username" placeholder="analyst@organization.com"></label>
+<label>Password<input required type="password" id="password" autocomplete="current-password"></label>
+<button class="btn primary wide" type="submit">Sign in securely</button></form>
+<div id="login-error" class="feedback" role="alert"></div>
+<small>Research / datathon demonstration. No automated fraud accusations or claim denials.</small></section></div>
+<div id="app" hidden>
+<aside class="sidebar"><div class="brand"><span>◈</span><div>SentinelIQ<small>CRITICAL DECISION SUPPORT</small></div></div>
+<nav aria-label="Main navigation" id="nav">
+<button data-view="dashboard" class="active">▦ <span>Overview</span></button>
+<button data-view="new">＋ <span>New analysis</span></button>
+<button data-view="cases">▤ <span>Case manager</span></button>
+<button data-view="models">◇ <span>Model readiness</span></button>
+<button data-view="admin" id="admin-nav" hidden>⚙ <span>Admin & audit</span></button>
+</nav><div class="sidebar-foot"><p class="tag">DEMONSTRATION ENVIRONMENT</p><p id="user-email"></p><button id="logout" class="btn ghost">↪ Sign out</button></div></aside>
+<div class="workspace"><header class="topbar"><div><div class="eyebrow">INSURANCE INTELLIGENCE PLATFORM</div><h1 id="heading">Overview</h1></div><div class="top-right"><span class="live-dot"></span> Local decision support <span id="role-chip" class="chip"></span></div></header>
+<main id="content" tabindex="-1"></main><footer>SentinelIQ · Research use only · Verify all critical decisions with authorized human reviewers.</footer></div>
+</div>
+<div id="toast" role="status" aria-live="polite"></div>
+</body></html>

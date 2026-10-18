@@ -1,0 +1,27 @@
+{
+  "disclaimer": "ALL datasets in this directory are SYNTHETIC simulations. Do not treat outcomes or metrics as real-world proof.",
+  "seed": 731,
+  "categories": [
+    "motor",
+    "health",
+    "life",
+    "property",
+    "travel",
+    "commercial",
+    "marine",
+    "crop",
+    "personal_accident",
+    "liability",
+    "cyber",
+    "pet",
+    "gadget",
+    "workers_comp"
+  ],
+  "label_definition": "fraud_label is simulated binary indicator, NOT verified fraud",
+  "data_limitations": [
+    "No real-world representation",
+    "No protected traits",
+    "No policy wording or coverage determination",
+    "Non-calibrated results"
+  ]
+}
